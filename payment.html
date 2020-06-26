@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/slick.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Scorpion</title>
+</head>
+
+<body>
+    <header class="icobalt ilayout show-nav" id="TopZone">
+        <div id="Masthead" class="masthead">
+            <a href="javascript:void(0)" class="top-logo">
+                <img src="images/Logo-white.png" alt="Scorpion - Internet Marketing Experts"></a>
+        </div>
+    </header>
+    <main class="icobalt ilayout" id="MainZone">
+        <section id="MainArea" class="icobalt isublayout slide dark">
+            <form id="Form_Payment" method="post">
+                <div id="Payment" class="payment slide dark slide-start ui-repeater">
+                    <header>
+                        <span>Lets Do This!</span>
+                        <h2 class="header">Payment</h2>
+                    </header>
+                    <div class="flex">
+                        <fieldset class=" half ui-tabs">
+                            <header>
+                                <h3>Card Information</h3>
+                                <ul id="tabs-nav">
+                                    <li class="ui-tab active" data-tab="Card">Card</li>
+                                    <li class="ui-tab" data-tab="Bill">Billing</li>
+                                </ul>
+                            </header>
+                            <ul class="flex ui-tab-panel active" data-tab="Card">
+                                <!-- On click of <li> add class "focused" to <li> and when invalid add class "invalid" -->
+                                <li class="full focused">
+                                    <div class="input-text placeholder">
+                                        <input type="text" name="Payment_CardName" required="required" value="Greg">
+                                        <label for="Payment_CardName">Card Holder</label>
+                                        <div class="validation" for="Payment_CardName">
+                                            Please enter the cardholder's name.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="full invalid">
+                                    <div class="input-text placeholder">
+                                        <input id="Payment_ITM72276_CardNumber" type="text" required="required"
+                                            name="Payment$ITM72276$CardNumber" value="" data-cc="number"
+                                            data-custom-validator="creditcard">
+                                        <label for="Payment_CardNumber">Card Number</label>
+                                        <div class="validation" for="Payment_CardNumber" data-type="valueMissing">
+                                            Please enter the credit card number.
+                                        </div>
+                                        <div class="validation" for="Payment_CardNumber" data-type="customError">
+                                            Please enter a valid credit card number.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half valid filled">
+                                    <div class="input-text capsule placeholder" id="Payment_CardExp">
+                                        <div class="fit">
+                                            <select required="required" name="Payment$ITM72276$CardExp"
+                                                id="Payment_CardExp_0" data-cc="valid" data-type="month">
+                                                <option value="" selected></option>
+                                                <option value="01">01</option>
+                                                <option value="02">02</option>
+                                                <option value="03">03</option>
+                                                <option value="04">04</option>
+                                                <option value="05">05</option>
+                                                <option value="06">06</option>
+                                                <option value="07">07</option>
+                                                <option value="08">08</option>
+                                                <option value="09">09</option>
+                                                <option value="10">10</option>
+                                                <option value="11">11</option>
+                                                <option value="12">12</option>
+                                            </select>
+                                        </div>
+                                        <span>/</span>
+                                        <div class="fit">
+                                            <select required="required" name="Payment$ITM72276$CardExp"
+                                                id="Payment_CardExp_1" data-cc="valid" data-type="year">
+                                                <option value="" selected></option>
+                                                <option value="2020">2020</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2022">2022</option>
+                                                <option value="2023">2023</option>
+                                                <option value="2024">2024</option>
+                                                <option value="2025">2025</option>
+                                            </select>
+                                        </div>
+                                        <label for="Payment_CardExp">Expiration Date</label>
+                                        <div class="validation" for="Payment_CardExp" data-type="valueMissing">
+                                            Please enter the card expiration.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="input-text placeholder has-tip">
+                                        <a href="javascript:void(0)" class="tooltip-topcenter has-tooltip tip">
+                                            <div class="tooltip">
+                                                The
+                                                <strong>CVV Number</strong> ("<strong>C</strong>ard
+                                                <strong>V</strong>erification
+                                                <strong>V</strong>alue") on your credit card or debit card is a 3 digit
+                                                number on VISA<sup>&reg;</sup>, MasterCard<sup>&reg;</sup> and
+                                                Discover<sup>&reg;</sup> branded credit and debit cards. On your
+                                                American Express<sup>&reg;</sup> branded credit or debit card, it is a 4
+                                                digit numeric code.
+                                            </div>
+                                        </a>
+                                        <input id="Payment_ITM72276_VerifCode" type="text" required="required"
+                                            name="Payment$ITM72276$VerifCode" value data-cc="ccv">
+                                        <label for="Payment_ITM72276_VerifCode">Security Code / CVV</label>
+                                        <div class="validation" for="Payment_ITM72276_VerifCode"
+                                            data-type="valueMissing">
+                                            Please enter the card verification value.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="full">
+                                    <a href="javascript:void('Next')" class="btn ui-tab ui-validate"
+                                        data-tab="Bill">Next Step</a>
+                                </li>
+                            </ul>
+                            <ul class="flex ui-tab-panel" data-tab="Bill">
+                                <li class="full">
+                                    <div class="input-text placeholder">
+                                        <input id="Payment_ITM72276_BillingAddress" type="text" required="required"
+                                            maxlength="128" name="Payment$ITM72276$BillingAddress"
+                                            value="4960 Longley Lane">
+                                        <label for="Payment_ITM72276_BillingAddress">Street Address</label>
+                                        <div class="validation" for="Payment_ITM72276_BillingAddress"
+                                            data-type="valueMissing">
+                                            Please enter the billing address for this card.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="full">
+                                    <div class="input-text placeholder">
+                                        <input id="Payment_ITM72276_BillingCity" type="text" required="required"
+                                            maxlength="36" name="Payment$ITM72276$BillingCity" value="Reno">
+                                        <label for="Payment_ITM72276_BillingCity">City</label>
+                                        <div class="validation" for="Payment_ITM72276_BillingCity"
+                                            data-type="valueMissing">
+                                            Please enter the billing city for this card.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="input-text placeholder">
+                                        <select id="Payment_ITM72276_BillingState" name="Payment$ITM72276$BillingState">
+                                            <option value="">&nbsp;</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IT">International</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV" selected>Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="OT">Other</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="PR">Puerto Rico</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="DC">Washington, DC</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+                                        <label for="Payment_ITM72276_BillingState">State</label>
+                                        <div class="validation" for="Payment_ITM72276_BillingState"
+                                            data-type="valueMissing">
+                                            Please enter the billing state for this card.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="half">
+                                    <div class="input-text placeholder">
+                                        <input id="Payment_ITM72276_BillingZipCode" type="text" required="required"
+                                            maxlength="10" name="Payment$ITM72276$BillingZipCode" value="89502">
+                                        <label for="Payment_ITM72276_BillingZipCode">Zip Code</label>
+                                        <div class="validation" for="Payment_ITM72276_BillingState"
+                                            data-type="valueMissing">
+                                            Please enter the billing state for this card.
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="full">
+
+
+
+                                    <button type="submit" class="btn" id="Payment_ITM72276_ctl15"
+                                        name="Payment$ITM72276$ctl15" data-commandname="Insert">Submit</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <figure class="half">
+                            <header>
+                                Your Card Will be Charged
+                                <span>$0</span>
+                            </header>
+                            <div class="ui-cc basic">
+                                <div class="card-logo">
+                                    <img src="images/card-basic.png" class="basic" alt="">
+                                    <img src="images/card-amex.png" class="amex" alt="">
+                                    <img src="images/card-discover.png" class="discover" alt="">
+                                    <img src="images/card-master.png" class="master" alt="">
+                                    <img src="images/card-visa.png" class="visa" alt="">
+                                </div>
+                                <ul class="front">
+                                    <li class="number">
+                                        <label>Card Number</label>
+                                        <span data-cc="number">&nbsp;</span>
+                                    </li>
+                                    <li class="holder">
+                                        <label>Card Holder</label>
+                                        <span data-cc="holder">Scorpion</span>
+                                    </li>
+                                    <li class="valid">
+                                        <label>Valid Thru</label>
+                                        <span data-cc="valid">**/**</span>
+                                    </li>
+                                </ul>
+                                <ul class="back">
+                                    <li class="ccv">
+                                        <label>CVV</label>
+                                        <span data-cc="ccv">863</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <small>We accept Visa, Mastercard, Discover and American Express.</small>
+                        </figure>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="icobalt ilayout" id="FooterZone">
+        <section class="instructions" id="Instructions">
+            <h2 class="header">Navigating Your Proposal </h2>
+            <p>
+                To navigate through your proposal, use the hub in the
+                <u>upper right.</u>
+            </p>
+            <p>Or... Use your left &amp; right arrows on your keyboard.</p>
+            <figure class="flex">
+                <div class="right"></div>
+                <div class="vertical">
+                    <div class="top"></div>
+                    <div class="bottom"></div>
+                </div>
+                <div class="left"></div>
+            </figure>
+            <a href="javascript:void('Navigate');" class="btn" data-direction="next">Ok, I got it</a>
+        </section>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+</body>
+
+</html>
